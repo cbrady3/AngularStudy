@@ -5,7 +5,7 @@
     to iterate over
     the predefined list 
 -->
-<div *ngFor = "let product of products">
+<div *ngFor = "let product of products; index as productId">
 
 
 <h3> 
@@ -14,8 +14,9 @@
     to use property value 
     in a template expression
 -->
-    <a [title] = "product.name + ' details'">
-    
+    <a 
+        [title] = "product.name + ' details'" 
+        [routerLink] = "['/products', productId]">
         {{ product.name }}  <!-- the interpolation syntax-->
     </a>
 </h3>
