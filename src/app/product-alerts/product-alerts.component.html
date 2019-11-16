@@ -1,0 +1,14 @@
+    <!-- 
+        an conditional p element,
+        based on product.price value
+    -->
+<p *ngIf="product.price > 700">
+   
+<!-- 
+    en click event binding to call of notify.emit() 
+    where notify is an instance of event emitter
+-->
+   
+    <button (click)="notify.emit()">Notify Me</button>
+    <!-- <button (click)="share()">Notify Me</button> -->
+</p>

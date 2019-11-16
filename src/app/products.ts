@@ -1,3 +1,5 @@
+
+// export as JSON style
 export const products = [
     {
       name: 'Phone XL',
